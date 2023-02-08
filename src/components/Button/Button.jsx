@@ -11,11 +11,11 @@ function getOrDefaultType(type) {
 }
 
 const Button = (props) => {
-  const { onClick, type, variant } = props;
+  const { children, onClick, text, type, variant } = props;
 
   return (
     <button className={variant} onClick={onClick} type={getOrDefaultType(type)}>
-      Submit
+      {children || text}
     </button>
   );
 };

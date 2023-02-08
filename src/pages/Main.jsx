@@ -10,9 +10,9 @@ const Main = () => {
       <h1>Componentes</h1>
       <div className="main-content">
         <div>
-          <Button type="submit" />
-          <Button onClick={() => alert('Hola')} />
-          <Button variant="primary"/>
+          <Button type="submit">Submit</Button>
+          <Button onClick={() => alert('Hola')}>Hello</Button>
+          <Button text="Primary" variant="primary"/>
           <Button variant="danger" />
         </div>
       </div>
